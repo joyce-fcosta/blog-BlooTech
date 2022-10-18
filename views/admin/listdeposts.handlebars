@@ -1,0 +1,14 @@
+<h2>Postagens da categoria: {{categoria.nome}}</h2>
+<hr>
+{{#each postagens}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h3>{{titulo}}</h3>
+            <p>{{conteudo}}</p>
+            <a href="/admin/postagem/{{id}}"><button class="btn btn-primary">Leia Mais</button></a>
+            <hr>
+            <p>{{categoria.nome}}</p>
+            <small>{{createdAt}}</small>
+        </div>
+    </div>
+{{/each}}
